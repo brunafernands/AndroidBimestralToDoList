@@ -22,12 +22,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true" app:srcCompat="@drawable/ic_addtarefa"
-            android:id="@+id/btAdicionarTarefa" android:layout_marginTop="408dp"
-            app:layout_constraintTop_toTopOf="@+id/listTarefas" android:layout_marginStart="320dp"
-            app:layout_constraintStart_toStartOf="@+id/listTarefas" android:layout_marginLeft="320dp"
+            android:id="@+id/btAdicionarTarefa"
             android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"
             android:tint="@color/colorAccent"
             app:backgroundTint="@android:color/background_light"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
