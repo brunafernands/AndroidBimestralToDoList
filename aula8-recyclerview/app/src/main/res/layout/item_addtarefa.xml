@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                   android:layout_height="wrap_content" app:cardElevation="8dp"
+                                   app:cardCornerRadius="8dp"
+                                   android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp" app:srcCompat="@drawable/ic_form"
+                android:id="@+id/imageView" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="12dp" android:layout_marginStart="12dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.181"
+        />
+
+        <ImageButton
+                android:layout_width="63dp"
+                android:layout_height="30dp" app:srcCompat="@drawable/ic_addtarefa"
+                android:id="@+id/btSalvarTarefaCriada"
+                android:background="@android:color/background_light" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/plainTextDesc" android:layout_marginEnd="140dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="140dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+                android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="1.0"
+                android:tint="@color/colorPrimary"/>
+        <EditText
+                android:layout_width="220dp"
+                android:layout_height="43dp"
+                android:inputType="textPersonName"
+                android:text="Título"
+                android:ems="10"
+                android:id="@+id/plainTextTitulo" android:layout_marginTop="8dp"
+                android:imeOptions="actionNext"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/imageView"
+                android:layout_marginStart="8dp" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:textStyle="bold|italic" android:textAllCaps="true" android:textColor="@color/colorPrimary"/>
+        <EditText
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Descrição"
+                android:imeOptions="actionDone"
+                android:ems="10"
+                android:id="@+id/plainTextDesc" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView" android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/plainTextTitulo" app:layout_constraintHorizontal_bias="0.0"
+                android:textStyle="bold|italic" android:textAllCaps="true" android:textColor="@color/colorPrimary"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
